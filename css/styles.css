@@ -1,0 +1,37 @@
+.jumbotron {
+	background-image: url("../img/header.jpg");
+	background-size: cover;
+}
+.jumbotron h1{
+	color:white;
+
+}
+.jumbotron p {
+	color: white;
+}
+.nav {
+	background-color: #D64541;
+	position: fixed;
+	width: 100%;
+	top:30;
+	margin-left:20;
+}
+.nav ul li {
+	display:inline-block;
+	padding: 10px 10px 10px;	
+}
+.nav ul li a{
+	color:black;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+.nav a:hover {
+	color:#f1c40f;
+	text-decoration: none;
+	transition: color 300ms;
+	webkit-transition: color;
+}
+body {
+	background-color:#f1c40f;
+	text-family:"Open Sans";
+}

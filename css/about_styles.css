@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.header h1{
+    font-family:"Julius Sans One";
+    text-align: center;
+    margin-top: 400 px;
+    background-color: #d35400;
+    background-color: #F39C12;
+}
+.image {
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+.column {
+    display: inline-block;
+    float: left;
+    padding: 0 20px;
+}
+.main_text {
+    clear:both;
+    padding: 10px 30 px 0 60pxs;
+    margin-bottom: 80px;
+}
+.column {
+    width:30%;
+}
+#skill_list {
+    margin-left: 50px;
+}
+/*Typography*/
+h1, 
+h2, 
+h3, 
+p, 
+li,{
+    font-family: 'Open Sans', Futura, Helvetica, Arial, Verdana;
+
+}
+.intro p {
+    font-size: 1em;
+    font-weight: 100;
+    -webkit-margin-before: 0;
+}
+.intro h3 {
+    text-transform: uppercase;
+}
+.skills h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+/*color*/
+body {
+    font-family:"Open Sans";
+    background-color: #f1c40f;
+    color: #34495e;
+    margin-top:50px;
+}
+.skills {
+    background-color: #D64541;
+    color:#FFF;
+}
+.nav {
+    background-color: #D64541;
+    position: fixed;
+    width: 100%;
+    top:30;
+    margin-left:20;
+    margin-top:0px;
+}
+.nav ul li {
+    display:inline-block;
+    padding: 10px 10px 10px;    
+}
+.nav ul li a{
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+.nav a:hover {
+    color:#f1c40f;
+    text-decoration: none;
+    transition: color 300ms;
+    webkit-transition: color;
+}
