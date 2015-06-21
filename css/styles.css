@@ -1,5 +1,4 @@
 .jumbotron {
-	background-image: url("../img/header.jpg");
 	background-size: cover;
 }
 .jumbotron h1{
@@ -15,6 +14,7 @@
 	width: 100%;
 	top:30;
 	margin-left:20;
+	z-index:1;
 }
 .nav ul li {
 	display:inline-block;
@@ -34,4 +34,14 @@
 body {
 	background-color:#f1c40f;
 	text-family:"Open Sans";
+}
+html { 
+  background: url(img/heroheader.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#carousel-example-generic {
+	padding-top:0px;
 }
