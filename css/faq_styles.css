@@ -29,3 +29,18 @@ body .nav {
 	transition: color 300ms;
 	webkit-transition: color;
 }
+.panel-group {
+    margin-top: 78px;
+    width:70%;
+    position:centered;
+    display:inline-block;
+}
+.panel-group a:hover {
+	color:#D64541;
+	text-decoration: none;
+	transition: color 300ms;
+	webkit-transition: color;
+}
+.panel-heading {
+	background-color: #F39C12;
+}
