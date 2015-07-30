@@ -12,7 +12,7 @@
 	background-color: #D64541;
 	position: fixed;
 	width: 100%;
-	top:30;
+	/*top:30;*/
 	margin-left:20;
 	z-index:1;
 }
@@ -45,3 +45,67 @@ html {
 #carousel-example-generic {
 	padding-top:0px;
 }
+
+/*ABOUT.CSS*/
+* { box-sizing: border-box; }
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.jumbotron {
+    background-color: #F39C12;
+    margin-top: 78px;
+}
+.header h1{
+    font-family:"Julius Sans One";
+    text-align: center;
+    margin-top: 400 px;
+    background-color: #d35400;
+    background-color: #F39C12;
+}
+.image {
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+.column {
+    display: inline-block;
+    float: left;
+    padding: 0 20px;
+    width:30%;
+ }
+ #skill_list {
+    text-align:left;
+}
+.main_text {
+    clear:both;
+    padding: 10px 30 px 0 60px;
+    margin-bottom: 80px;
+}
+/*FAQ*/
+.panel-group {
+    margin-top: 78px;
+    width:70%;
+    position:centered;
+    display:inline-block;
+}
+.panel-group a:hover {
+	color:#D64541;
+	text-decoration: none;
+	transition: color 300ms;
+	webkit-transition: color;
+}
+.panel-heading {
+	background-color: #F39C12;
+}
+
+/*CONTACT.CSS*/
+.contact_information {
+	background-color: #D64541;
+display:inline-block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
+
+
