@@ -1,3 +1,34 @@
+/*Navigation*/
+.nav {
+    background-color: #D64541;
+    position: fixed;
+    width: 100%;
+    /*top:30;*/
+    margin-left:20;
+    z-index:1;
+}
+.nav ul li {
+    display:inline-block;
+    padding: 10px 10px 10px;    
+}
+.nav ul li a{
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+.nav a:hover {
+    color:#f1c40f;
+    text-decoration: none;
+    transition: color 300ms;
+    webkit-transition: color;
+}
+/*General*/
+body {
+    background-color:#f1c40f;
+    text-family:"Open Sans";
+}
+
+/*home*/
 .jumbotron {
 	background-size: cover;
 }
@@ -7,33 +38,6 @@
 }
 .jumbotron p {
 	color: white;
-}
-.nav {
-	background-color: #D64541;
-	position: fixed;
-	width: 100%;
-	/*top:30;*/
-	margin-left:20;
-	z-index:1;
-}
-.nav ul li {
-	display:inline-block;
-	padding: 10px 10px 10px;	
-}
-.nav ul li a{
-	color:black;
-	text-transform: uppercase;
-	letter-spacing: 0.025em;
-}
-.nav a:hover {
-	color:#f1c40f;
-	text-decoration: none;
-	transition: color 300ms;
-	webkit-transition: color;
-}
-body {
-	background-color:#f1c40f;
-	text-family:"Open Sans";
 }
 html { 
   background: url(img/heroheader.jpg) no-repeat center fixed; 
@@ -54,7 +58,6 @@ html {
 }
 .jumbotron {
     background-color: #F39C12;
-    margin-top: 78px;
 }
 .header h1{
     font-family:"Julius Sans One";
@@ -86,7 +89,7 @@ html {
 .panel-group {
     margin-top: 78px;
     width:70%;
-    position:centered;
+    position: centered;
     display:inline-block;
 }
 .panel-group a:hover {
@@ -98,11 +101,13 @@ html {
 .panel-heading {
 	background-color: #F39C12;
 }
-
+.panel {
+    margin-left:auto;
+    margin-right:auto;
+}
 /*CONTACT.CSS*/
 .contact_information {
 	background-color: #D64541;
-display:inline-block;
 margin-left: auto;
 margin-right: auto;
 width: 30%;
