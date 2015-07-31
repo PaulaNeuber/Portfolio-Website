@@ -1,21 +1,21 @@
 /*Navigation*/
-.nav {
+.navbar {
     background-color: #B5ABB1;
     position: fixed;
     width: 100%;
     margin-left:20;
     z-index:1;
 }
-.nav ul li {
+.navbar ul li {
     display:inline-block;
     padding: 10px 10px 10px;    
 }
-.nav ul li a{
+.navbar ul li a{
     color:black;
     text-transform: uppercase;
     letter-spacing: 0.025em;
 }
-.nav a:hover {
+.navbar a:hover {
     color:#f1c40f;
     text-decoration: none;
     transition: color 300ms;
@@ -25,6 +25,7 @@
 body {
     background-color:#E2D5D5;
     text-family:"Open Sans";
+    position:relative;
 }
 
 /*home*/
@@ -32,18 +33,13 @@ body {
 	background-size: cover;
 }
 .jumbotron h1{
-	color:white;
-
+	color:#E2D5D5;
 }
 .jumbotron p {
 	color: white;
 }
-html { 
-  background: url(img/heroheader.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.quicklinks {
+    color:black‚;
 }
 #carousel-example-generic {
 	padding-top:0px;
@@ -56,7 +52,7 @@ html {
     margin:0 auto;
 }
 .jumbotron {
-    background-color: #E2D5D5;
+    background-color: #7D6472;
 }
 .header h1{
     font-family:"Julius Sans One";
@@ -103,7 +99,7 @@ html {
 
 /*CONTACT.CSS*/
 .contact_information {
-	background-color: #D64541;
+	background-color: #FFFFFF;
 margin-left: auto;
 margin-right: auto;
 width: 30%;
