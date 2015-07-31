@@ -28,11 +28,11 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="nav"> 
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>  
-        <li><a href="#work.html">Work</a></li>
-        <li><a href="faq.html">FAQ</a></li>     
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>  
+        <li><a href="#work">Work</a></li>
+        <li><a href="#faq">FAQ</a></li>     
       </ul>
     </div>
     <div class="jumbotron">
@@ -47,19 +47,19 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/heroheader.jpg" alt="...">
+              <img src="img/desk (1).jpg" alt="...">
                 <div class="carousel-caption">
                  Erstes Bild
                 </div>
             </div>
             <div class="item">
-              <img src="img/heroheader2.jpg" alt="...">
+              <img src="img/wish (1).jpg" alt="...">
                 <div class="carousel-caption">
                 Zweites Bild
                 </div>
             </div>
             <div class="item">
-              <img src="img/heroheader3.jpg" alt="...">
+              <img src="img/ingredients (1).jpg" alt="...">
                 <div class="carousel-caption">
                 Drittes Bild
                 </div>
@@ -85,7 +85,7 @@
         <a href="contact.html">Get in touch.</a>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="home">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
@@ -105,8 +105,114 @@
         </div>
       </div>
     </div> 
+    <div class="container" id="faq">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                How long does it take you to build a website?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+            There's no general fixed time since every project differs in complexity. Depending on my workload with other jobs we can develop a timeframe that will suit your needs.
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                What can I expect from a website build by you?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+              It will be unique, beautiful and with all the funtions you need.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+           <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+              With the website going live, is the project completed for you?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+            A website is never completed. I'll of course be available for you when you want some changes to be made.
+            </div>
+          </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+    <div class="container" id="contact"> 
+      <div class="jumbotron"> 
+      <h1> Get in touch.</h1>
+      <p>Whether you want my help or more information: feel free to contact me.
+      </p>
+      </div>     
+      <div class="contact_information">
+        <h3>online</h3>
+        <p> 
+          <a href="mailto:p.neuber@zeppelin-university.net"> p.neuber@zeppelin-university.net</a> <br>
+          <a href="https://twitter.com/neuberpaula">twitter.com/neuberpaula</a>
+        </p>
+        <h3>offline</h3>
+        <p>
+          <span class="glyphicon glyphicon-map-marker"></span>Friedrichshafen, Germany
+        </p>
+      <img src="img/map.jpg"> 
+    </div>
       <!-- /container -->
       <!-- ================================================== -->
       <!-- Can place script tags with JavaScript files here -->
+    <div class="container" id="about">
+      <div class="jumbotron">
+        <h1>Hey. This is me. I'm glad you want to get to know more about me. 
+        </h1>
+      </div>
+      <div class="image">
+        <img src="img/paula.jpg">       
+      </div>
+      <div class="intro column">
+        <h3>Introduction</h3>
+        <p> I'm Paula. I'm 21 and in love with everything that beeps, buzzes and connects to the Internet. If R2D2 had wifi support I'd probably be married to him.</p>
+      </div>
+      <div class="skills column">
+        <h3>I'm</h3>
+        <ul id="skill_list">
+          <li>great with people</li>
+          <li>creative</li>
+          <li>devoted</li>
+        </ul>
+      </div>
+      <div class="main_text">
+        <h3> The whole story:</h3>
+        <p> Technological devices have always amazed me and the internet is my true home.<br>
+        Obviously I would have played with Barbies if only they had carried a laptop instead of a purse.<br>
+        Growing up in the wonderful town of Dresden and going to <a href="http://www.manos-dresden.de/">this</a> amazing school I was often frustrated because everybody was so much smarter then me and seemed to understand everything related to natural sciences and IT better than me. I decided that I'd rather pursue studies in humanities. After 4 semesters at <a href="www.zu.de">Zeppelin University </a>where I study Sociology, Politics and Economics I noticed how much I actually miss the clarity and logic that accompany science. That's why I started an online-course for coding and quickly noticed that I was not alone on this. With an awesome team we brought <a href="www.codecats.io">CodeCats</a> to life. An initiative that promotes code literacy, especially amongst women. This summer we organized a summercamp with about 50 participants who all learn to code. We're in this together and we're rocking it.
+        </p>
+      </div>
+    </div> 
+    <div class="container" id="work">
+      <div class="row" id="medium_screen">
+        <div class="col-md-4 col-xs-6"></div>
+        <img src="img/square.jpg" class="img-responsive">
+        <div class="col-md-4 col-xs-6"></div>
+        <img src="img/square.jpg".jpg" class="img-responsive">
+        <div class="col-md-4 col-xs-6"></div>
+        <img src="img/square.jpg" class="img-responsive">
+        <div class="col-md-4 col-xs-6"></div>
+        <img src="img/square.jpg" class="img-responsive">
+        <div class="col-md-4 col-xs-6"></div>
+        <img src="img/square.jpg"" class="img-responsive">
+      </div>
+    </div>
   </body>
 </html>
