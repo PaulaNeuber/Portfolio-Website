@@ -3,7 +3,6 @@
   <head>
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link href="css/bootstrap.css" rel="stylesheet"> 
     <link href="css/styles.css" rel="stylesheet">
     <!-- jQuery is required for Bootstrap to work -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -12,29 +11,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paula Neuber</title>
-    <!-- Bootstrap core CSS -->
-  
-    <!-- Custom styles for this template go here -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body>
-    <div class="navbar"> 
-      <body data-spy="scroll" data-target=".navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>  
-        <li><a href="#work">Work</a></li>
-        <li><a href="#faq">FAQ</a></li>     
-      </ul>
-    </div>
+  <body data-spy="scroll" data-target=".navbar">
+    <!--navbar starts here -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <div class="projectname" id="projectname">
+            <a href="#" class="nav-link">Paula Neuber</a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#faq">FAQ</a></li>    
+            <li><a href="#contact">Contact</a></li> 
+          </ul> 
+         </div> <!--end navbar collapse-->
+        </div> <!--end nav container-->
+    </div> <!--end navbar-->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -74,10 +82,10 @@
           </a>
       </div>
     </div>
-    <div class="jumbotron" id="headertron">
-      <div class="container">
-        <h1>Paula Neuber</h1>
-        <p>Tech enthusiast turning your ideas into reality.</p>
+    <div class="container" id="header">
+      <div class="jumbotron" id="headertron">
+      <h1>Paula Neuber</h1>
+      <p>Tech enthusiast turning your ideas into reality.</p>
       </div>
     </div>
     <div class="container" id="home">
@@ -212,24 +220,37 @@
     </div>
     <div class="container" id="contact"> 
       <div class="jumbotron"> 
-      <h1> Get in touch.</h1>
-      <p>Whether you want my help or more information: feel free to contact me.
-      </p>
+        <h1> Get in touch.</h1>
+        <p>Whether you want my help or more information: feel free to contact me.
+        </p>
       </div>     
-      <div class="contact_information">
-        <h3>online</h3>
-        <p> 
-          <a href="mailto:p.neuber@zeppelin-university.net"> p.neuber@zeppelin-university.net</a> <br>
-          <a href="https://twitter.com/neuberpaula">twitter.com/neuberpaula</a>
-        </p>
-        <h3>offline</h3>
-        <p>
-          <span class="glyphicon glyphicon-map-marker"></span>Friedrichshafen, Germany
-        </p>
-      <img src="img/map.jpg"> 
-    </div>
       <!-- /container -->
       <!-- ================================================== -->
       <!-- Can place script tags with JavaScript files here -->
+      <div class="row" id="medium_screen">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h3>online</h3>
+          <a href="mailto:p.neuber@zeppelin-university.net"> p.neuber@zeppelin-university.net</a> <br>
+          <a href="https://twitter.com/neuberpaula">twitter.com/neuberpaula</a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h3>offline</h3>
+          <p>
+          <span class="glyphicon glyphicon-map-marker"></span>Friedrichshafen, Germany
+          </p>
+        </div>  
+    </div> 
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+          });
+        return false;
+    });
+  </script>    
   </body>
 </html>

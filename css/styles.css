@@ -11,16 +11,29 @@
     padding: 10px 10px 10px;    
 }
 .navbar ul li a{
-    color:black;
+    color:#7D6472 !important;
     text-transform: uppercase;
     letter-spacing: 0.025em;
 }
 .navbar a:hover {
-    color:#f1c40f;
+    color:#f1c40f;--!>
     text-decoration: none;
     transition: color 300ms;
     webkit-transition: color;
 }
+.nav {
+    float:right;
+}
+.projectname a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    padding:13px;
+    float:left;
+    color:white !important;
+}
+
+
 /*General*/
 body {
     background-color:#E2D5D5;
@@ -82,13 +95,13 @@ body {
 }
 /*FAQ*/
 .panel-group {
-    margin-top: 78px;
-    width:70%;
+    margin-top: 0px;
+    width:100%;
     position: centered;
     display:inline-block;
 }
 .panel-group a:hover {
-	color:#D64541;
+	color:#7D6472;
 	text-decoration: none;
 	transition: color 300ms;
 	webkit-transition: color;
@@ -99,12 +112,25 @@ body {
 
 /*CONTACT.CSS*/
 .contact_information {
-	background-color: #FFFFFF;
 margin-left: auto;
 margin-right: auto;
 width: 30%;
 }
 
+#contact {
+    background-image: url("../img/cbackground.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color:black;
+    padding:100px;
+    padding-top: 50px;
+    height: 600px;
+}
+.contact a:hover{
+    text-decoration: none;
+    transition: color 300ms;
+    color:white;
+}
 
 /*work.css*/
 .img-responsive {
