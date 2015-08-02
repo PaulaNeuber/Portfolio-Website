@@ -7,6 +7,7 @@
     <!-- jQuery is required for Bootstrap to work -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -239,7 +240,14 @@
           <span class="glyphicon glyphicon-map-marker"></span>Friedrichshafen, Germany
           </p>
         </div>  
-    </div> 
+      </div> 
+    </div>  
+    <footer>
+      <div class="container" id="footer">
+        <p>&copy; Paula Neuber 2015 </p>
+        <a href="https://twitter.com/NeuberPaula" class="twitter-follow-button" data-show-count="false">Follow @NeuberPaula</a> 
+      </div>
+    </footer>
     <script type="text/javascript">
       var $root = $('html, body');
         $('.navbar-nav a').click(function() {
@@ -250,7 +258,7 @@
             window.location.hash = href;
           });
         return false;
-    });
-  </script>    
+      });
+    </script>    
   </body>
 </html>
