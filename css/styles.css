@@ -133,6 +133,9 @@ width: 30%;
     transition: color 300ms;
     color:white;
 }
+.form-control{
+    width:99%;
+}
 
 /*work*/
 .img-responsive {
