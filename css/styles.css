@@ -85,7 +85,7 @@ body {
 }
 
 /*CONTACT.CSS*/
-.contact submit{
+.contact {
     background-image: url("../img/cbackground.jpg");
     background-size: cover;
     color:black;
