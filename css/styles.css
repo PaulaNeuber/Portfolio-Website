@@ -1,11 +1,14 @@
 /*Navigation*/
-.navbar {
-    background-color: #B5ABB1;
-    position: fixed;
-    width: 100%;
-    margin-left:20;
-    z-index:1;
+.navbar-collapse {
+    text-transform: uppercase;
+    float:right;
+    color:#7d6472;
 }
+
+.navbar {
+    background-color:#B5ABB1;
+}
+
 .container {
     width:80%;
     margin:0 auto;
@@ -13,31 +16,14 @@
 .jumbotron {
     background-color: #7D6472;
 }
-.navbar ul li {
-    display:inline-block;
-    padding: 10px 10px 10px;    
-}
-.navbar ul li a{
-    color:#7D6472 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-}
-.navbar a:hover {
-    color:#f1c40f;
-    text-decoration: none;
-    transition: color 300ms;
-    webkit-transition: color;
-}
-.nav {
-    float:right;
-}
+
 .projectname a{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
     padding:13px;
     float:left;
-    color:white !important;
+    color:white;
 }
 
 
