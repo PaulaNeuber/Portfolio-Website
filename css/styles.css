@@ -14,7 +14,6 @@
     color:white;
 }
 
-
 /*General*/
 body {
     background-color:#E2D5D5;
@@ -35,6 +34,10 @@ body {
 .jumbotron p {
     color: white;
 }
+.jumbotron a{
+    color:black;
+}
+
 
 /*home*/
 
@@ -45,36 +48,28 @@ body {
 	padding-top:0px;
 }
 
-/*ABOUT.CSS*/
-* { box-sizing: border-box; }
-
-.header h1{
-    font-family:"Julius Sans One";
-    text-align: center;
+/*header*/
+.header p{
+    color:white;
 }
-.image {
-    display: inline-block;
-    float: left;
-    margin-bottom: 20px;
-}
-.column {
-    display: inline-block;
-    float: left;
-    padding: 0 20px;
-    width:30%;
- }
- #skill_list {
+.learn-more{
     text-align:left;
+    float:left;
 }
-.main_text {
-    clear:both;
-    margin-bottom: 80px;
+.btn {
+    padding:5px;
+    font-size:21px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+/*ABOUT.CSS*/
+
+
+
 /*FAQ*/
 .panel-group {
     margin-top: 0px;
     width:100%;
-    position: centered;
     display:inline-block;
 }
 .panel-group a:hover {
@@ -84,21 +79,17 @@ body {
 	webkit-transition: color;
 }
 
+
 /*CONTACT.CSS*/
 .contact {
     background-image: url("../img/cbackground.jpg");
     background-size: cover;
+    background-attachment: fixed;
     color:black;
-    padding:100px;
+    padding: 50px;
     padding-top: 50px;
-    height: 600px;
-    padding-bottom:600px;
 }
-.contact a:hover{
-    text-decoration: none;
-    transition: color 300ms;
-    color:white;
-}
+
 .form-control{
     width:99%;
 }
@@ -109,14 +100,26 @@ body {
   max-width: 100%;
   height: auto;
 }
+.modal-body {
+    height:500px;
+}
+
+.modalframe {
+    padding:10px;
+    width:100%;
+    height:100%;
+}
+
   /*footer*/
-.footer {
-    padding-top:300px;
-    color:white;
+
+footer {
+    max-width: 90%;
+    position:centered;
 }
-.footer a{
-    padding-bottom: 500px;
+
+.twitter-follow-button {
+    float:right;
 }
-#footer p{
-    float:right !important; 
+footer p{
+    float:left;
 }
