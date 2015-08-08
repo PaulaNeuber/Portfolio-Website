@@ -8,6 +8,11 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <!--jQuery Media Script-->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script>
+      $(function (){
+        $('#[insert ID your tooltip here]').tooltip();
+      });
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -93,18 +98,18 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Portfolio Concept</h2>
-          <p>Onepage CV for an application for my next internship</p>
+          <h2>E-Commerce Manager</h2>
+          <p>Working with Magento for more than two years I can manage your product portfolio, customer database, billing and shipping process.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Project Goals</h2>
-          <p>I want to finish the course within three months but work 2 days a week and have to hand in 3 papers until mid july. After that I have more time for the course. Will still do something everday.</p>
+          <h2>Web Developer</h2>
+          <p>Being fluent in HTML, CSS, Javascript, Bootstrap and Ruby on Rails I can build you anything you can imagine. And if you're out of ideas we'll develop some together!</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Course Goals</h2>
-          <p>I want to be able to work as a freelancer afterwards to keep improving my skills.</p>
+          <h2>SAP Implementer</h2>
+          <p>Working with SAP can be a pain. I'll make sure you and all your employees get to know SAP and will be able to use it to it's fullest potential</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
@@ -149,13 +154,16 @@
         <h1>Work experience? 
         </h1>
         <p>Look at what I've done already and whom I worked with. Or just <br>
-          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">check out my CV
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"> 
+            <a href="#" title="Click here to view my CV" id="item1">check out my CV
+            </a>
           </button>
           <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                  </button>
                   <h4 class="modal-title" id="myModalLabel">CV
                   </h4>
                 </div>
