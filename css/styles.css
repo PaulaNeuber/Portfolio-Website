@@ -49,7 +49,7 @@ body {
 }
 
 /*header*/
-.header p{
+#header p{
     color:white;
 }
 .learn-more{
@@ -103,7 +103,7 @@ body {
     height:500px;
 }
 
-.modalframe {
+#cv {
     padding:10px;
     width:100%;
     height:100%;
@@ -111,13 +111,9 @@ body {
 
   /*footer*/
 
-footer {
-    max-width: 90%;
-}
-
 .twitter-follow-button {
     float:right;
+    position:inline;
 }
-footer p{
-    float:left;
+
 }

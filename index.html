@@ -8,10 +8,7 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <!--jQuery Media Script-->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <script>
-      $(function (){
-        $('#[insert ID your tooltip here]').tooltip();
-      });
+    <script src="js/script.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <meta charset="utf-8">
@@ -167,7 +164,7 @@
                   </h4>
                 </div>
                 <div class="modal-body">
-                  <iframe id="CV" src="CV.pdf"></iframe>
+                  <iframe id="cv" src="CV.pdf"></iframe>
                 </div>
               </div>
             </div>
@@ -289,23 +286,23 @@
           </div> <!--closing bootstrap grid!-->
         </div>
       </div> <!--closing contact!-->
-    </div>  
-    <footer>
-        <p>&copy; Paula Neuber 2015 </p>
-        </div>
+    </div>
+    <div class="container" id="footer"> 
+      <p>&copy; Paula Neuber 2015 
         <a href="https://twitter.com/NeuberPaula" class="twitter-follow-button" data-show-count="false">Follow @NeuberPaula</a> 
-    </footer>
-    <script type="text/javascript">
-      var $root = $('html, body');
-        $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
+        <script type="text/javascript">
+          var $root = $('html, body');
+            $('.navbar-nav a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+              });
+            return false;
           });
-        return false;
-      });
-    </script>    
+        </script>  
+      </p>
+    </div>   
   </body>
 </html>
