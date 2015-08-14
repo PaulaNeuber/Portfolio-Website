@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-   $("#work").css("background-color","pink");
+
   $("#test").on("click", function(){
     var comment= $(".message-box").val();
     console.log(comment)
@@ -11,8 +11,13 @@ $(document).ready(function(){
     var nameName=3;
     var name="string";
     var charCount = $(".message-box").val().length
-    console.log(charCount)
-
+    console.log(charCount);
+      $("#char-count").html(charCount);
+        if(charCount>50) {
+          $("#char-count").css("color","red");
+        } else {
+          $("#char-count").css("color","black");
+        };
   });
 });
 
