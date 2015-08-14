@@ -1,8 +1,8 @@
 $(document).ready(function(){ 
-  $("#work").css("background-color","pink");
   $("#test").on("click", function(){
     var comment= $(".message-box").val();
     console.log(comment)
+   $("#visible-comment").html(comment); 
   });
 
   $(".message-box").on("keyup", function(){
