@@ -2,6 +2,7 @@ $(document).ready(function(){
   $("#test").on("click", function(){
     var comment= $(".message-box").val();
     console.log(comment)
+    $("#visible-comment").html(comment);
   });
 
   $(".message-box").on("keyup", function(){
@@ -11,6 +12,5 @@ $(document).ready(function(){
     var charCount = $(".message-box").val().length
     console.log(charCount)
   });
-
 });
 
