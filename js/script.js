@@ -1,10 +1,11 @@
 $(document).ready(function(){ 
-
-  $("#test").on("click", function(){
-    var comment= $(".message-box").val();
-    console.log(comment)
-   $("#visible-comment").html(comment); 
-  });
+  var rows=$(".my-row");
+  console.log(rows);
+for (var i=0; i<rows.length; ++i) {
+  if (i%2===0) {
+    $(rows[i]).css("background-color","blue");
+  };
+};
 
   $(".message-box").on("keyup", function(){
     console.log("keyup happened");
@@ -19,5 +20,6 @@ $(document).ready(function(){
           $("#char-count").css("color","black");
         };
   });
+
 });
 
